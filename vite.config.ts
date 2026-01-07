@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, (process as any).cwd(), '');
   return {
+    base: process.env.GITHUB_ACTIONS ? '/lucky-money-and-fortune/' : '/',
     plugins: [react()],
     define: {
       // This allows process.env.API_KEY to work in the frontend code
