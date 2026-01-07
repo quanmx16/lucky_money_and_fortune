@@ -3,6 +3,7 @@ import { AppState, PredictionResult } from './types';
 import CameraCapture from './components/CameraCapture';
 import ResultView from './components/ResultView';
 import TetBackground from './components/TetBackground';
+import MusicPlayer from './components/MusicPlayer';
 import { analyzeImageForPrediction } from './services/geminiService';
 import { Sparkles, Camera, Wallet, PartyPopper, Settings2 } from 'lucide-react';
 
@@ -57,8 +58,9 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center py-6 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto relative overflow-hidden">
-      
+
       <TetBackground />
+      <MusicPlayer />
 
       {/* Decorative Couplets (Hidden on mobile, visible on lg) */}
       <div className="fixed top-1/2 left-4 -translate-y-1/2 hidden xl:flex flex-col items-center gap-2 animate-bounce-slow z-0">
