@@ -1,0 +1,7 @@
+{
+  "name": "Lucky Money & Fortune",
+  "description": "A hilarious app that analyzes your selfie to determine which animal you truly are deep inside.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
