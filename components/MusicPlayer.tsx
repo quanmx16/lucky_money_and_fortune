@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
+import tetMusicFile from '../tet_music.mp3';
 
 const MusicPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -57,7 +58,7 @@ const MusicPlayer: React.FC = () => {
   return (
     <>
       <audio ref={audioRef} loop>
-        <source src="/tet_music.mp3" type="audio/mpeg" />
+        <source src={tetMusicFile} type="audio/mpeg" />
       </audio>
 
       <button
